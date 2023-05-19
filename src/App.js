@@ -4,9 +4,11 @@ import Sub from "./components/Sub/Sub";
 import { useState } from "react";
 function App() {
   const [inputValue, setInputValue] = useState(0);
+  //console.log('inputValue',inputValue);
+  //console.log('setInputValue',setInputValue);
   const [addValue, setaddValue] = useState(0);
   const printValue = () => {
-    console.log("inputeValue printValue", inputValue);
+    //console.log("inputeValue printValue", inputValue);
     return inputValue;
   };
   return (
@@ -17,7 +19,7 @@ function App() {
           value={inputValue}
           onChange={(e) => {
             setInputValue(e.target.value);
-            console.log("inputValue", inputValue);
+      //      console.log("inputValue", inputValue);
           }}
           type="number"
           placeholder="Enter Number"
@@ -28,7 +30,7 @@ function App() {
           value={addValue}
           onChange={(e) => {
             setaddValue(e.target.value);
-            console.log("addValue", addValue);
+        //    console.log("addValue", addValue);
           }}
           type="number"
           placeholder="Enter Number"
@@ -36,7 +38,7 @@ function App() {
       </div>
 
       <p>Add Number{inputValue}</p>
-<p>Add value{addValue}</p>
+      <p>Add value{addValue}</p>
       <button onClick={printValue}>Print </button>
       <Add a={inputValue} b={addValue}></Add>
       <Sub a={inputValue} b={addValue}></Sub>
