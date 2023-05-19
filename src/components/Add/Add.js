@@ -1,6 +1,6 @@
 
 const Add = (props) =>{
-
+console.log('props',props);
     return (
       <div>
         <p>This is the Add Components</p>
